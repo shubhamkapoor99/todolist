@@ -1,0 +1,16 @@
+.container{
+	
+	width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7
+}
+.a{
+	margin-top: 90px;
+	padding: 40px;
+	background-color:#f6f6f6;
+	color: black;
+	border-radius: 10px;
+}
+form-group input{
+    width: 50px;
+  }

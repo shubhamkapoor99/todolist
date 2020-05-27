@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+
+<div class="container a">
+	<h1 style="margin: 30px;">TO-DO List <a href="/add"><button class="btn btn-primary" style="float: right;">Add</button></a></h1> 
+	<ul>
+        <%theuser.forEach(function(theuser){%>
+		<li><%= theuser.Name %>   <a style="float: right; margin-left: 20px;" href="/list/<%=theuser._id%>/delete"><i class="fas fa-trash-alt"></i></a>    <a href="/list/<%=theuser._id%>/edit" style="float: right; margin-left: 20px;"><i class="fas fa-edit"></i></a></li>
+		<% }) %>
+	</ul>
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer") %>

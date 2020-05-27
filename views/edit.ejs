@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<div class="container a border border-primary" style="width:500px; margin-top: 150px;">
+    <form action="/list/<%=user._id%>?_method=PUT" method="POST">
+   <div class="form-group">
+            <h4>Edit:</h4>
+            <input type="text" name="user[Name]" class="form-control" value="<%= user.Name %>"><br>
+            <button type="submit" class="btn btn-outline-primary" style="margin-top: 40px;">Update</button>
+          </div>
+        </form>
+        
+ </div>
+<%- include("partials/footer") %>
+
+
